@@ -14,7 +14,7 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/img/HG.ico">
     <style>.pointer {cursor: pointer;}</style>    
     <style>
     .button-solid {
@@ -24,6 +24,12 @@
       border: none;
       outline: none;
   }</style>
+  <script>
+    function myFunction() {
+     var element = document.body;
+    element.classList.toggle("dark-mode");
+    }
+  </script>
   <style>
       body {
         padding: 25px;
@@ -101,18 +107,11 @@
           <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link text-uppercase" href="index.html">Home </a></li>
-              <li class="nav-item"><a class="nav-link text-uppercase" href="Page2.html">Expertise </a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="Page2.html">Expertise <span class="sr-only">(current)</span></a></li>
               <li class="nav-item"><a class="nav-link text-uppercase" href="Page3.html">Education <span class="sr-only">(current)</span></a></li>
               <li class="nav-item"><a class="nav-link text-uppercase" href="Page4.html" style="color: #fbd214">Experience <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link text-uppercase pointer" onclick="myFunction()"> Toggle dark mode
-                <script>
-                  function myFunction() {
-                   var element = document.body;
-                  element.classList.toggle("dark-mode");
-                  }
-                </script>
-              </a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase pointer" onclick="myFunction()"> Toggle dark mode <span class="sr-only">(current)</span></a></li>
             </ul>
           </div>
         </div>
