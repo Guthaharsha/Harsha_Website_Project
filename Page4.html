@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    
+    <style>.pointer {cursor: pointer;}</style>    
     <style>
     .button-solid {
       border: none;
@@ -105,15 +105,14 @@
               <li class="nav-item"><a class="nav-link text-uppercase" href="Page2.html">Expertise </a></li>
               <li class="nav-item"><a class="nav-link text-uppercase" href="Page3.html">Education <span class="sr-only">(current)</span></a></li>
               <li class="nav-item"><a class="nav-link text-uppercase" href="Page4.html" style="color: #fbd214">Experience <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link text-uppercase"> <button onclick="myFunction()" class="nav-link text-uppercase" class=”button-solid”>Toggle dark mode</button>
-                
-                  <script>
-                    function myFunction() {
-                     var element = document.body;
-                    element.classList.toggle("dark-mode");
-                    }
-                  </script>
-                </a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase pointer" onclick="myFunction()"> Toggle dark mode
+                <script>
+                  function myFunction() {
+                   var element = document.body;
+                  element.classList.toggle("dark-mode");
+                  }
+                </script>
+              </a></li>
             </ul>
           </div>
         </div>
